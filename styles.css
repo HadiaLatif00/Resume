@@ -1,0 +1,121 @@
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cv-container {
+    max-width: 800px;
+    max-height: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Header Section */
+header {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #000000;
+}
+
+.contact-info {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+.contact-info a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    margin-bottom: 10px;
+}
+
+section h4 {
+    font-size: 1.1em;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+section h5 {
+    margin: 0;
+    font-size: 0.95em;
+    color: #000000;
+}
+
+section p {
+    margin: 3px 0;
+    font-size: 0.85em;
+    color: #000000;
+}
+section:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+section ul {
+    margin: 5px 0 5px 15px;
+    padding-left: 10px;
+}
+
+section ul li {
+    margin-bottom: 5px;
+    font-size: 0.85em;
+}
+section.languages ul {
+    columns: 2; /* Split the list into two columns */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section.languages ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+section.languages ul li::before {
+    content: "•";
+    color: #0077b5; /* Blue bullet points */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cv-container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h4 {
+        font-size: 1em;
+    }
+
+    section p, section ul li {
+        font-size: 0.8em;
+    }
+}
