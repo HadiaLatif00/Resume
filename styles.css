@@ -9,12 +9,11 @@ body {
 
 .cv-container {
     max-width: 800px;
-    max-height: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevent content from overflowing */
+    overflow: auto /* Prevent content from overflowing */
 }
 
 /* Header Section */
